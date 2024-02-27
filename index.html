@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="referrer" content="no-referrer" />
+    <meta property="og:site_name" content="Bing WallPaper" />
+    <meta
+      property="og:title"
+      content="Bing WallPaper - Bing WallPaper Collection"
+    />
+    <meta
+      name="twitter:title"
+      content="Bing WallPaper - Bing WallPaper Collection"
+    />
+    <meta name="description" content="Bing WallPaper Collection" />
+    <meta property="og:description" content="Bing WallPaper Collection" />
+    <meta name="twitter:description" content="Bing WallPaper Collection" />
+    <meta name="keywords" content="bing,wallpaper" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"
+    />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta
+      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      name="robots"
+    />
+    <meta content="#282c34" name="theme-color" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/icons/android-chrome-256x256.png"
+    />
+    <title>Bing Wallpaper</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="./">Bing Wallpaper</a></h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search Image..." />
+        <button id="searchButton">Search</button>
+        <button id="donwloadWallPaper">Download WallPaper</button>
+      </div>
+    </div>
+    <div class="pagination-container">
+      <button class="firstPage">First Page</button>
+      <button class="prevPage">Previous Page</button>
+      <span>
+        <div class="currentPage">1</div>
+        /
+        <div class="totalpage">1</div>
+      </span>
+      <button class="nextPage">Next Page</button>
+      <button class="lastPage">Last Page</button>
+    </div>
+    <div class="image-gallery"></div>
+    <div class="pagination-container last">
+      <button class="firstPage">First Page</button>
+      <button class="prevPage">Previous Page</button>
+      <span>
+        <div class="currentPage">1</div>
+        /
+        <div class="totalpage">1</div>
+      </span>
+      <button class="nextPage">Next Page</button>
+      <button class="lastPage">Last Page</button>
+    </div>
+    <button id="scrollTopBtn" class="scroll-top-btn">&#9650;</button>
+  </body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+  <div class="modal-overlay" id="modal">
+    <span class="close-button">&times;</span>
+    <div class="modal-content">
+      <p></p>
+    </div>
+  </div>
+</html>
