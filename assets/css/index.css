@@ -5,16 +5,6 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
-  }
-
-  .image-gallery {
-    margin: 170px 15px 15px !important;
-  }
-}
-
 .header {
   position: fixed;
   width: 100%;
@@ -226,8 +216,12 @@ input[type="text"] {
   justify-content: center;
 }
 
-.pagination-container .last {
+.pagination-container.bottom {
+  position: relative;
+  text-align: center;
   margin: 10px 15px 15px !important;
+  display: flex;
+  justify-content: center;
 }
 
 .pagination-container button {
@@ -245,7 +239,7 @@ input[type="text"] {
 .scroll-top-btn {
   display: none;
   position: fixed;
-  bottom: 70px;
+  bottom: 90px;
   right: 20px;
   padding: 10px 20px;
   border-radius: 25em;
@@ -267,4 +261,32 @@ input[type="text"] {
 
 .scroll-top-btn.show {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(135deg, #282c34, rgb(17, 14, 29));
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    padding: 5px;
+  }
+
+  .image-gallery {
+    margin: 20px 10px 15px !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .pagination-container {
+    margin: 170px 15px 15px;
+  }
+  
+  .pagination-container.bottom {
+    margin: 10px 15px 15px !important;
+  }
 }
