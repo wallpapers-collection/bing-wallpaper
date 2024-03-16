@@ -222,7 +222,7 @@ input[type="text"] {
 .modal-footer {
   display: flex;
   justify-content: flex-end;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .pagination-container {
