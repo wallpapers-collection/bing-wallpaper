@@ -289,4 +289,33 @@ input[type="text"] {
   .pagination-container.bottom {
     margin: 10px 15px 15px !important;
   }
+
+  .modal-content {
+    color: #030303;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content p {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
+  }
+  
+  .close-button {
+    position: relative;
+    top: -44px;
+    right: -282px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #333;
+  }
 }
