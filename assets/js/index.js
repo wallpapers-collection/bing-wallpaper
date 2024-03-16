@@ -304,12 +304,11 @@ function isLoading(isLoading) {
 }
 
 function openModal(message) {
-  const modal = document.getElementById("modal");
-  const modalContent = modal.querySelector("p");
-  const closeModalButton = document.querySelector(".close-button");
+  const modal = document.querySelector(".modal-overlay");
+  const modalContent = modal.querySelector(".modal-content span");
   modalContent.innerHTML = message;
   modal.classList.add("show");
-  closeModalButton.addEventListener("click", function () {
+  document.querySelector('.close-btn').addEventListener("click", function () {
     modal.classList.remove("show");
   });
 }
