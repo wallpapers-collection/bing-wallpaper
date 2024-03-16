@@ -280,6 +280,14 @@ input[type="text"] {
   display: block;
 }
 
+footer {
+  color: #ffffff;
+  padding: 10px;
+  background: linear-gradient(135deg, #282c34, rgb(17, 14, 29));
+  text-align: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     position: fixed;
