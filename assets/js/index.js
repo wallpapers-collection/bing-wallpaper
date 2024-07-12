@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 async function loadPicture() {
   const response = await fetch(
-    `https://chrome-tool.github.io/change-google-calendar-background/raw/datas.json`
+    `https://wallpapers-collection.github.io/bing-wallpaper/raw/datas.json`
   );
   return await response.json();
 }
